@@ -20,16 +20,13 @@ const Header = () => {
                 <Link to='/'>Acceuil</Link>
               </li>
               <li>
-                <Link to='/about'>QUi sommes-nous ???</Link>
+                <Link to='/about'>A propos</Link>
               </li>
               <li>
                 <Link to='/produit'>Produits</Link>
               </li>
               <li>
                 <Link to='/Partenaire'>Partenaires</Link>
-              </li>
-              <li>
-                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
             <button className='toggle' onClick={() => setMobile(!Mobile)}>
@@ -41,7 +38,7 @@ const Header = () => {
             <i class='fas fa-bell'></i>
             <i className='fas fa-user'></i>
             <div className="profile">
-              <button>Adhérer Now</button>
+              <button>Adhérer</button>
               <div className="options">
                 <span>projet number one</span>
                 <span>projet number one</span>

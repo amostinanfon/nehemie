@@ -5,7 +5,7 @@ import Upcomming1 from "../components/upcoming/Upcomming"
 import Upcomming2 from "../components/upcoming/Upcomming"
 import Upcomming3 from "../components/upcoming/Upcomming"
 import { latest, recommended, upcome } from "../dummyData"
-import About from '../pages/About'
+//import About from '../pages/About'
 
 const HomePage = () => {
   const [items, setItems] = useState(upcome)

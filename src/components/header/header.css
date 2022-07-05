@@ -13,12 +13,12 @@ header {
 }
 header a{
   color: #fff;
-  margin-left: 30px;
+  margin-left: 20px;
+  padding: 10px;
 }
 
 header a:hover{
   background-color: red;
-  padding: 5px;
   border-radius: 5px;
 }
 header i {
@@ -68,8 +68,18 @@ header button {
   header nav .flexSB {
     display: none;
   }
-  .account {
+  .account i{
     display: none;
+  }
+
+  .account{
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+
+  .account button{
+    margin-right: 30px;
+    width: 70%;
   }
   .navMenu-list {
     display: flex;
@@ -78,6 +88,7 @@ header button {
     top: 0;
     left: 0;
     background-color: #e50813;
+    padding-left: 10px;
     width: 50%;
     height: 100vh;
     z-index: 9999;

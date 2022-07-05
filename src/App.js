@@ -5,6 +5,7 @@ import SinglePage from "./components/watch/SinglePage"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 import About from './pages/About'
+import Produit from "./pages/Produit"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route path='/produit' component={Produit} />
           <Route path='/about' component={About} />
           <Route path='/singlepage/:id' component={SinglePage} exact />
         </Switch>
