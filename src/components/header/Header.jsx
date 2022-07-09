@@ -35,14 +35,20 @@ const Header = () => {
           </nav>
           <div className='account flexSB'>
             <i className='fa fa-search'></i>
-            <i class='fas fa-bell'></i>
+            <i className='fas fa-bell'></i>
             <i className='fas fa-user'></i>
             <div className="profile">
               <button>Adhérer</button>
               <div className="options">
-                <span>projet number one</span>
-                <span>projet number one</span>
-                <span>projet number one</span>
+                <span>
+                  <Link to='/adhesion'>projet 1</Link>
+                </span>
+                <span>
+                  <Link to='/adhesion2'>projet 2</Link>
+                </span>
+                <span>
+                  <Link to='/adhesion2'>projet 3</Link>
+                </span>
               </div>
             </div>
           </div>
