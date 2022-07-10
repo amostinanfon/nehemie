@@ -50,7 +50,7 @@ header button {
   display: flex;
   flex-direction: column;
   position: absolute;
-  padding: 0 15px;
+  padding: 0 ;
   margin: 0;
   align-items: center;
   justify-content: center;
@@ -78,8 +78,8 @@ header button {
   }
 
   .account button{
-    margin-right: 30px;
-    width: 70%;
+    margin-right: 0px;
+    width: 100%;
   }
   .navMenu-list {
     display: flex;
@@ -97,6 +97,11 @@ header button {
     align-items: left;
     margin-top: 30px;
     padding: 0 50px;
+  }
+
+  .profile button {
+    margin-left: 50px;
+    width: 70%;
   }
   .toggle {
     display: block;

@@ -16,15 +16,15 @@ const onSubmit = async (values, actions) =>{
     actions.resetForm();
 
     
-        // const postUsers = async() => {
-        //     try {
-        //         const res = await axios.post("http://localhost:5000/api/users/", values)
-        //         console.log(res);
-        //     } catch(err) {
-        //         console.log(err);
-        //     };
-        //   }
-        //     postUsers();
+        const postUsers = async() => {
+            try {
+                const res = await axios.post("http://localhost:5000/api/users/", values)
+                console.log(res);
+            } catch(err) {
+                console.log(err);
+            };
+          }
+      postUsers();
 }
 
 
@@ -35,31 +35,12 @@ const basicSchema = Yup.object().shape({
     email: Yup.string().email("email invalide").required("l'email est obligatoire"),
     id: Yup.string().min(1, 'Trop court').required("Ce champ est Obligatoire"),
     acceptTerms: Yup.bool().oneOf([true], "Accepter la condition est obligatoire"),
-    image: Yup.mixed().required("Obligatoire")
-    // file: Yup.mixed()
-    //     .nullable()
-    //     .required('Ce champ est Obligatoire')
-    //     .test(
-    //         'size',
-    //         'File size is too big',
-    //         (value) => value && value.size <= 1024 * 1024 // 5MB
-    //       )
-    //       .test(
-    //         'type',
-    //         'Invalid file format selection',
-    //         (value) =>
-    //           // console.log(value);
-    //           !value || (value && value.SUPPORTED_FORMATS.includes(value?.type))
-    //       ),
-        
+    image: Yup.mixed().required("Obligatoire")        
 })
 
 
 
 function Adhesion() {
-
-    //const SUPPORTED_FORMATS = ['image/jpg', 'image/png', 'image/jpeg', 'image/gif'],
-
 
     const { values , errors, handleBlur , handleChange, handleSubmit , isSubmitting} = useFormik ({
         initialValues: {
@@ -75,13 +56,11 @@ function Adhesion() {
 
     })
 
-  return (
-    // <form onSubmit={(values) =>handleSubmit(values)} autoComplete='off'>
-    
+  return (    
     <form onSubmit={handleSubmit} autoComplete='off'>
-        <label style={{color: ''}}>ADRESSE DE LA TRANSACTION</label>
-        TRhMMXemFEVcNApzdpYSRGgq1kmz51FAm6
-        <label>USDT (TRC29)</label>
+        <label style={{color: 'red', fontSize:'20px'}}>ADRESSE DE PAIEMENT</label>
+        TRhMMXemFEVcNApzdpYSRGgq1kmz51FAm6<br></br>
+        <strong>🖐️USDT (TRC20)</strong>
         <label htmlFor='firstName'>Prenom</label>
         <input 
             value={values.firstName}

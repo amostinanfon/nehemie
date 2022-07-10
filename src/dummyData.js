@@ -2,7 +2,7 @@ export const homeData = [
   {
     id: 1,
     name: "usdt",
-    desc: "Aute pariatur irure officia esse ad quis nisi anim id eiusmod aliquip culpa. Magna reprehenderit irure id cillum sunt aliqua magna esse ipsum ipsum consequat quis dolore.",
+    desc: "Une solution bien différente des autres stablecoins du marché",
     cover:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQ-tdBb3HMGVDKuzU1G5Kg-dKxQcOb3_BZg&usqp=CAU",
     video: "../video/video1.mp4",
     date: "20-Jan-1997",
@@ -10,7 +10,7 @@ export const homeData = [
   {
     id: 2,
     name: "TRADING",
-    desc: "Aute pariatur irure officia esse ad quis nisi anim id eiusmod aliquip culpa. Magna reprehenderit irure id cillum sunt aliqua magna esse ipsum ipsum consequat quis dolore. ",
+    desc: "Il vaut mieux ne pas réfléchir du tout que de ne pas réfléchir assez",
     cover: "https://cdn.tokize.com/fr/wp-content/uploads/2022/03/Article-1-Trader-les-bitcoin-et-les-cryptomonnaies-en-generale.jpeg",
     video: "../video/video2.mp4",
     date: "10-JUL-2021",
@@ -18,15 +18,15 @@ export const homeData = [
   {
     id: 3,
     name: "DECISIONS",
-    desc: "Aute pariatur irure officia esse ad quis nisi anim id eiusmod aliquip culpa. Magna reprehenderit irure id cillum sunt aliqua magna esse ipsum ipsum consequat quis dolore.",
+    desc: "Vous souhaitez investir mais vous ne savez pas comment faire ?",
     cover: "https://media.istockphoto.com/photos/businessman-using-tablet-online-banking-exchange-currency-and-payment-picture-id1312767508?k=20&m=1312767508&s=612x612&w=0&h=wPI5XeJdkNsKoILhtCoLn-G6_v87N8slwKFjE1GmjcE=",
     video: "../video/video3.mp4",
     date: "20-FEB-2010",
   },
   {
     id: 4,
-    name: "future",
-    desc: "Aute pariatur irure officia esse ad quis nisi anim id eiusmod aliquip culpa.",
+    name: "FUTURE",
+    desc: "Je pense également qu'il est fort regrettable que la gestion des finances personnelles ne soit pas enseignée à l'école.",
     cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-DlvG2JZFvXsZ03PnfvXAy1SBDrnU3wY6iw&usqp=CAU",
     video: "../video/video4.mp4",
     date: "12-Aug-2015",

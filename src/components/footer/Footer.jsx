@@ -10,11 +10,10 @@ const Footer = () => {
           <div className='box'>
             <ul className='flex'>
               <li>Termes d'utilisation</li>
-              <li>Privacy-Policy</li>
               <li>Blog</li>
               <li>FAQ</li>
             </ul>
-            <p>© 2022 SUNSET. All Rights Reserved. Lorem,laudantium facere ratione! Repellat, quo ratione magni, dignissimos a beatae fugiat cumque culpa sunt dolorum consectetur, quasi excepturi?.</p>
+            <p>© 2022 SUNSET. Ce site est la propriété de SUN7 developpé par the_process</p>
           </div>
           <div className='box'>
             <h3>Nous suivre</h3>

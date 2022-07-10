@@ -26,7 +26,7 @@ const Header = () => {
                 <Link to='/produit'>Produits</Link>
               </li>
               <li>
-                <Link to='/Partenaire'>Partenaires</Link>
+                <Link to=''>Partenaires</Link>
               </li>
             </ul>
             <button className='toggle' onClick={() => setMobile(!Mobile)}>
@@ -42,13 +42,6 @@ const Header = () => {
               <div className="options">
                 <span>
                   <Link to='/adhesion'>projet 1</Link>
-                </span>
-                <span>
-                  <Link to='/adhesion2'>projet 2</Link>
-                </span>
-
-                <span>
-                  <Link to='/adhesion2'>projet 3</Link>
                 </span>
               </div>
             </div>
