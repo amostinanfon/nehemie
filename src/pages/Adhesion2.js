@@ -1,15 +1,14 @@
 import react from 'react';
 import {Formik, Field, Form, ErrorMessage} from 'formik';
 import * as Yup from 'yup';
-import Button from 'react-bootstrap/Button'
+import './adhesion.css'
 
 
 const initialValues = {
     firstName: "",
     lastName: "",
     email: "",
-    password: "",
-    confirmPassword: "",
+    id:null,
     image: null,
     acceptTerms: false,
 };
@@ -29,20 +28,15 @@ const validationSchema = Yup.object().shape({
     email: Yup.string()
         .email("email invalide")
         .required("l'email est obligatoire"),
-    password: Yup.string()
-        .required("Mot de passe est obligatoire")
-        .min(8, "Mot de passe doit être plus grand que 8 caractères")
-        .max(50, "Mot de passe doit être plus petit que 50 caractères"),
-    confirmPassword: Yup.string()
-        .required("Confirmation de mot de passe est obligatoire")
-        .oneOf(
-            [Yup.ref("password"), null],
-            "Le mot de passe de confirmation ne correspond pas"
-        ),
+    id: Yup.string()
+        .min(9, 'Encore un caractère')
+        .max(11, 'Trop long')
+        .required("Ce champ est Obligatoire")
+    ,
     acceptTerms: Yup.bool().oneOf([true], "Accepter les conditions est obligatoire"),
     image: Yup.mixed()
         .nullable()
-        .required('Required Field')
+        .required('Ce champ est Obligatoire')
         .test(
             'size',
             'File size is too big',
@@ -59,9 +53,11 @@ const validationSchema = Yup.object().shape({
 });
 
 
-const handleSubmit = (values) => {
-    console.log(values)
+const handleSubmit = () => {
+    console.log('submitted')
 };
+
+//console.log(values)
 
 
 const Adhesion2= () => {
@@ -73,13 +69,13 @@ const Adhesion2= () => {
                     <Formik
                         initialValues={initialValues}
                         validationSchema={validationSchema}
-                        onSubmit={(values) =>handleSubmit(values)}
+                        onSubmit={(values) =>console.log(values)}
                     >
                         {({ resetForm }) => (
                             <Form>
                                 <div className="form-group mb-3">
                                     <label htmlFor="firstName">
-                                        Prénoms:
+                                        Prénom:
                                     </label>
                                     <Field
                                         type="text"
@@ -125,47 +121,10 @@ const Adhesion2= () => {
                                         className="text-danger"
                                     />
                                 </div>
-                                {/* <div className="form-group mb-3">
-                                    <label htmlFor="password">
-                                        Mot de passe:
-                                    </label>
-                                    <Field
-                                        type="password"
-                                        id="password"
-                                        name="password"
-                                        className="form-control"
-                                    />
-                                    <ErrorMessage
-                                        name="password"
-                                        component="small"
-                                        className="text-danger"
-                                    />
-                                </div>
-                                <div className="form-group mb-3">
-                                    <label htmlFor="confirmPassword">
-                                        Confirmer le mot de
-                                        passe:
-                                    </label>
-                                    <Field
-                                        type="password"
-                                        id="confirmPassword"
-                                        name="confirmPassword"
-                                        className="form-control"
-                                    />
-                                    <ErrorMessage
-                                        name="confirmPassword"
-                                        component="small"
-                                        className="text-danger"
-                                    />
-                                </div> */}
                                 <div className="form-group form-check mb-5">
-                                    <Field
-                                        name="acceptTerms"
-                                        type="checkbox"
-                                        className="form-check-input"
-                                    />
+                                    
                                     <div className="form-group mb-3">
-                                    <label htmlFor="confirmPassword">
+                                    <label htmlFor="file">
                                         Image
                                     </label>
                                     <Field
@@ -184,6 +143,7 @@ const Adhesion2= () => {
                                         htmlFor="acceptTerms"
                                         className="form-check-label"
                                     >
+                                        <input type='checkbox' />
                                         J'ai lu et j'accepte
                                         les conditions
                                     </label>
@@ -194,12 +154,12 @@ const Adhesion2= () => {
                                     />
                                 </div>
                                 <div className="form-group d-flex justify-content-end gap-3">
-                                    <Button
+                                    <button
                                         type="submit"
                                         className="btn btn-primary"
                                     >
                                         S'inscrire
-                                    </Button>
+                                    </button>
                                     <button
                                         type="button"
                                         onClick={resetForm}

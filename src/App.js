@@ -19,7 +19,7 @@ function App() {
           <Route path='/produit' element={<Produit/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/adhesion' element={<Adhesion/>} exact />
-          <Route path='/adhesion2' element={<Adhesion2/>} exact />
+          <Route path='/adhesion2' element={<Adhesion2/>} exact /> */}
         </Routes>
         <Footer />
       </Router>
