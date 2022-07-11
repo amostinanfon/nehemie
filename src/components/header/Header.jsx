@@ -34,9 +34,7 @@ const Header = () => {
             </button>
           </nav>
           <div className='account flexSB'>
-            <i className='fa fa-search'></i>
-            <i className='fas fa-bell'></i>
-            <i className='fas fa-user'></i>
+            <button className="active" style={{margin:"10px"}}>Activer</button>
             <div className="profile">
               <button>Adhérer</button>
               <div className="options">
