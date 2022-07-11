@@ -19,7 +19,7 @@ const onSubmit = async (values, actions) =>{
     
         const postUsers = async() => {
             try {
-                const res = await axios.post("https://usdtapp.herokuapp.com/users", values)
+                const res = await axios.post("https://usdtapp.herokuapp.com/api/users", values)
                 console.log(res);
             } catch(err) {
                 console.log(err);
