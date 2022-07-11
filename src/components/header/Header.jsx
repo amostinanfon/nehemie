@@ -20,20 +20,20 @@ const Header = () => {
                 <Link to='/'>Acceuil</Link>
               </li>
               <li>
-                <Link to='/about'>A propos</Link>
+                <Link to='/about'>About</Link>
               </li>
               <li>
                 <Link to='/produit'>Produits</Link>
               </li>
               <li>
-                <Link to=''>Partenaires</Link>
+                <Link to='/adhesion'>Adhérer</Link>
               </li>
             </ul>
             <button className='toggle' onClick={() => setMobile(!Mobile)}>
               {Mobile ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}
             </button>
           </nav>
-          <div className='account flexSB'>
+          {/* <div className='account flexSB'>
             <button className="active" style={{margin:"10px"}}>Activer</button>
             <div className="profile">
               <button>Adhérer</button>
@@ -42,8 +42,12 @@ const Header = () => {
                   <Link to='/adhesion'>projet 1</Link>
                 </span>
               </div>
-            </div>
-          </div>
+            </div> */}
+          {/* <div className='account flexSB'>
+              <button>
+                <Link to='/adhesion'>Adhérer</Link>
+              </button>
+          </div> */}
         </div>
       </header>
     </>

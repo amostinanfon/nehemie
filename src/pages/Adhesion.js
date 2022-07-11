@@ -13,17 +13,15 @@ import axios from 'axios';
 
 
 const onSubmit = async (values, actions) =>{
+
+    console.log(values)
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
 
     
         const postUsers = async() => {
             try {
-                const res = await axios.post("https://usdtapp.herokuapp.com/api/users", values, {
-                    headers: {
-                        "Content-Type": "application/json",  
-                    }
-                })
+                const res = await axios.post("https://usdtapp.herokuapp.com/api/users", values)
                 console.log(res);
             } catch(err) {
                 console.log(err);
@@ -42,7 +40,7 @@ const basicSchema = Yup.object().shape({
     email: Yup.string().email("email invalide").required("l'email est obligatoire"),
     id: Yup.string().min(1, 'Trop court').required("Ce champ est Obligatoire"),
     acceptTerms: Yup.bool().oneOf([true], "Accepter la condition est obligatoire"),
-    file: Yup.mixed().required("Obligatoire")        
+    img: Yup.mixed().required("Obligatoire")        
 })
 
 
@@ -54,7 +52,7 @@ function Adhesion() {
             lastName:"",
             email:"",
             id:"",
-            file: "",
+            img: "",
             acceptTerms: false
         },
         validationSchema: basicSchema,
@@ -167,13 +165,13 @@ function Adhesion() {
             className={errors.id ? "input-error" : ""}
         />
         {errors.id ? <p>{errors.id}</p>:""}
-        <label htmlFor='image'>Image</label>
+        <label htmlFor='img'>Image</label>
         <input 
-            value={values.file}
+            value={values.img}
             accept='image/*'
             onChange={handleChange}
             onBlur={handleBlur}
-            id='file' 
+            id='img' 
             type='file' 
         />
         {errors.file? <p>{errors.file}</p>:""}

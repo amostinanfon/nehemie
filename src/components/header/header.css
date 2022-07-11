@@ -43,7 +43,7 @@ header button {
 
 .profile .options {
   display: none;
-  background-color: red;
+  /* background-color: red; */
   border-radius: 5px;
 }
 
@@ -63,15 +63,15 @@ header button {
   justify-content: center;
 }
 
-.profile:hover .options span:hover{
-  color: red;
+/* .profile:hover .options span:hover{
+  /* color: red;
   border-radius: 5px;
-}
+} */
 
 .toggle {
   display: none;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
   header nav .flexSB {
     display: none;
   }
@@ -105,11 +105,6 @@ header button {
     padding: 0 50px;
   }
 
-  .profile:hover .options span:hover{
-    color: rgb(180, 156, 156);
-    border-radius: 5px;
-  }
-  
   .toggle {
     display: block;
     position: absolute;
