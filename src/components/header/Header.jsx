@@ -28,6 +28,9 @@ const Header = () => {
               <li>
                 <Link to='/adhesion'>Adhérer</Link>
               </li>
+              <li>
+                <Link to='/activation'>Activer</Link>
+              </li>
             </ul>
             <button className='toggle' onClick={() => setMobile(!Mobile)}>
               {Mobile ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}

@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer"
 import About from './pages/About'
 import Produit from "./pages/Produit"
 import Adhesion from './pages/Adhesion'
+import Activation from './pages/Activation'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/produit' element={<Produit/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/adhesion' element={<Adhesion/>} exact />
+          <Route path='/activation' element={<Activation/>} exact />
         </Routes>
         <Footer />
       </Router>

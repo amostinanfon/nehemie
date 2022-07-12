@@ -50,7 +50,7 @@ const Upcomming = ({ items, title }) => {
         <div className='container'>
           <div className='heading flexSB'>
             <h1>{title}</h1>
-            <Link to='/'>VOIR PLUS</Link>
+            <Link to='/'></Link>
           </div>
           <div className='content'>
             <Slider {...settings}>

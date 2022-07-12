@@ -179,8 +179,8 @@ function Adhesion() {
             htmlFor="acceptTerms"
         >
         <input type="checkbox" id='acceptTerms' name='acceptTerms' checked={values.acceptTerms} onChange={handleChange}/>
-            J'ai lu et j'accepte
-            les conditions
+        J'ai lu et j'accepte
+            les conditions d'utilisation
         </label> 
        {errors.acceptTerms?<p>{errors.acceptTerms}</p>:""}
         <button 

@@ -34,7 +34,7 @@ export const homeData = [
   {
     id: 5,
     name: "vision",
-    desc: "Aute pariatur irure officia esse ad quis nisi anim id eiusmod aliquip culpa.",
+    desc: "Une solution bien différente des autres stablecoins du marché.",
     cover: "https://coins.fr/wp-content/uploads/2021/10/tether-1280x720.jpg",
     video: "../video/video4.mp4",
     date: "12-Aug-2015",
@@ -98,7 +98,7 @@ export const trending = [
     name: "About US",
     rating: 4.7,
     time: "2hr : 22mins",
-    desc: "Sand and dust storms (SDS), also known as sirocco, haboob, yellow dust, white storms, and the harmattan, are a natural phenomenon linked with land and water management and climate change.",
+    desc: "Une solution bien différente des autres stablecoins du marché,Il vaut mieux ne pas réfléchir du tout que de ne pas réfléchir assez .",
     starring: "Karen Gilchrist, James Earl Jones",
     genres: "Action",
     tags: "Action, Adventures, Horror",
