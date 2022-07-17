@@ -95,7 +95,7 @@ export const latest = [
 export const trending = [
   {
     id: 1,
-    name: "About US",
+    name: "à propos",
     rating: 4.7,
     time: "2hr : 22mins",
     desc: "Une solution bien différente des autres stablecoins du marché,Il vaut mieux ne pas réfléchir du tout que de ne pas réfléchir assez .",
