@@ -13,7 +13,8 @@ const Ucard = ({ item: { id, cover, name, time } }) => {
           <span>{time}</span><br />
           {/*<Link to={`/singlepage/${id}`}>*/}
           <button className='primary-btn'>
-            <i className='fa fa-play'></i>NE DOUTE PLUS
+            {/* <i className='fa fa-play'></i>INVESTIR */}
+             <i className='fa fa-play'></i>INVESTIR
           </button>
           {/*</Link>*/}
         </div>

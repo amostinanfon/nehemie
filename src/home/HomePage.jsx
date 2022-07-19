@@ -14,8 +14,10 @@ const HomePage = () => {
   return (
     <>
       <Homes />
-      <Upcomming1 items={items} title='Produits' />
-      <Upcomming2 items={item} title='Services' />
+      {/* <Upcomming1 items={items} title='Produits' />
+      <Upcomming2 items={item} title='Services' /> */}
+      <Upcomming1 items={items}/>
+      <Upcomming2 items={item}/>
       <Trending />
       <Upcomming3 items={rec} title='Ils nous ont fait confiance' />
     </>
