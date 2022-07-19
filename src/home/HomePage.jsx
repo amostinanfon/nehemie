@@ -19,7 +19,8 @@ const HomePage = () => {
       <Upcomming1 items={items}/>
       <Upcomming2 items={item}/>
       <Trending />
-      <Upcomming3 items={rec} title='Ils nous ont fait confiance' />
+      {/* <Upcomming3 items={rec} title='Ils nous ont fait confiance' /> */}
+      <Upcomming3 items={rec} />
     </>
   )
 }

@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Dispatch } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 
@@ -179,8 +180,8 @@ function Adhesion() {
             htmlFor="acceptTerms"
         >
         <input type="checkbox" id='acceptTerms' name='acceptTerms' checked={values.acceptTerms} onChange={handleChange}/>
-        J'ai lu et j'accepte
-            les conditions d'utilisation
+        J'ai lu et j'accepte les conditions d'utilisation
+        <Link to='/contrat' style={{marginLeft:"5px"}}>contrat d'adhésion</Link>
         </label> 
        {errors.acceptTerms?<p>{errors.acceptTerms}</p>:""}
         <button 

@@ -1,0 +1,12 @@
+.modification{
+    margin: 20px;
+}
+
+.modification h1 {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #34b7eb;
+}

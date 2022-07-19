@@ -20,7 +20,7 @@ const HomeCard = ({ item: { id, cover, name, rating, time, desc, starring, genre
                 <i className='fa fa-star-half'></i>
               </div>
             </div>
-            <p style={{marginBottom:'5px'}}>{desc}</p>
+            <p>{desc}</p>
             {/* <button className='primary-btn'>
               <i className='fas fa-play'></i> PLUS DE DOUTE
             </button> */}

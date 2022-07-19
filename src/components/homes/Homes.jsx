@@ -11,7 +11,7 @@ const Homes = () => {
       <section className='home'>
         <Home items={items} />
       </section>
-      <div className='margin'></div>
+      <div className='mragin'></div>
     </>
   )
 }
