@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Dispatch } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 
@@ -21,7 +22,7 @@ const onSubmit = async (values, actions) =>{
     
         const postUsers = async() => {
             try {
-                const res = await axios.post("http://82.180.137.232/api/products", values)
+                const res = await axios.post("http://api.sun7network.com/api/products", values);
                 console.log(res);
             } catch(err) {
                 console.log(err);
@@ -44,7 +45,7 @@ const basicSchema = Yup.object().shape({
 })
 
 
-function Adhesion() {
+function Activation() {
 
     const { values , errors, handleBlur , handleChange, handleSubmit , isSubmitting} = useFormik ({
         initialValues: {
@@ -177,8 +178,8 @@ function Adhesion() {
             htmlFor="acceptTerms"
         >
         <input type="checkbox" id='acceptTerms' name='acceptTerms' checked={values.acceptTerms} onChange={handleChange}/>
-            J'ai lu et j'accepte
-            les conditions d'utilisation
+            J'ai lu et j'accepte les conditions d'utilisation
+            <Link to='/contrat' style={{marginLeft:"5px", color:'lightsalmon'}}>contrat d'adhésion</Link>
         </label> 
        {errors.acceptTerms?<p>{errors.acceptTerms}</p>:""}
         <button 
@@ -190,5 +191,5 @@ function Adhesion() {
   )
 }
 
-export default Adhesion;
+export default Activation;
 

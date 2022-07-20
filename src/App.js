@@ -17,6 +17,10 @@ import Type from "./pages/Type";
 import Perte from "./pages/Perte";
 import Confidentialite from "./pages/Confidentialite";
 import Modification from "./pages/Modification";
+import AboutInfo from "./pages/AboutInfo";
+import Success from "./pages/Success";
+import AdhesionInfo from "./pages/AdhesionInfo";
+
 
 
 function App() {
@@ -28,7 +32,7 @@ function App() {
           <Route exact path='/' element={<HomePage/>} />
           <Route path='/produit' element={<Produit/>} />
           <Route path='/about' element={<About/>} />
-          <Route path='/adhesion' element={<Adhesion/>} />
+          <Route path='/adhesion' element={<AdhesionInfo/>} />
           <Route path='/activation' element={<Activation/>} />
           <Route path='/contrat' element={<Contrat/>}/>
           <Route path='/preambule' element={<Preambule/>}/>
@@ -39,6 +43,9 @@ function App() {
           <Route path='/perte' element={<Perte/>}/>
           <Route path='/confidentialite' element={<Confidentialite/>}/>
           <Route path='/modification' element={<Modification/>}/>
+          <Route path='/aboutinfo' element={<AboutInfo/>}/>
+          <Route path='/success' element={<Success/>}/>
+          <Route path='/adhesioninfo' element={<Adhesion/>}/>
         </Routes>
         <Footer />
       </Router>

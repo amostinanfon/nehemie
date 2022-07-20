@@ -1,0 +1,28 @@
+.img{
+  margin: 10px 0 0 10px;
+}
+
+
+img {
+    margin-right: 5px;
+    padding-right: 5px;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 20px;
+    float: left;
+}
+
+h1{
+    color: #34b7eb;
+    margin: 2px;
+    text-transform: uppercase;
+}
+
+hr{
+    width: 5%;
+    align-items: center;
+    color: lightsalmon;
+    font-size: 20px;
+    font-weight: 500;
+    /* border-style: dashed solid; */
+}

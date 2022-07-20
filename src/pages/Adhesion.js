@@ -8,30 +8,7 @@ import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Dispatch } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-
-
-
-
-const onSubmit = async (values, actions) =>{
-
-    console.log(values)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    actions.resetForm();
-
-    
-        const postUsers = async() => {
-            try {
-                const res = await axios.post("http://82.180.137.232/api/users", values)
-                console.log(res);
-            } catch(err) {
-                console.log(err);
-            };
-          }
-      postUsers();
-
-}
-
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
@@ -45,7 +22,40 @@ const basicSchema = Yup.object().shape({
 })
 
 
-function Adhesion() {
+
+
+
+
+ function Adhesion() {
+
+
+    let navigate = useNavigate();
+    const [ data , setData] = useState([]);
+
+    const onSubmit = async (values,actions) =>{
+
+        console.log(values)
+        //console.log(actions)
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        //actions.resetForm()
+    
+          const  postUsers = async() => {
+                    try {
+                        const res = await axios.post("http://api.sun7network.com/api/users", values);
+                        console.log(res);
+                        
+                    } catch(err) {
+                        console.log(err);
+                    };
+                  }
+              postUsers(); 
+              if( data.length != 0) {
+                navigate('/success')
+              }  else{
+                console.log('e')
+              } 
+    }
+    
 
     const { values , errors, handleBlur , handleChange, handleSubmit , isSubmitting} = useFormik ({
         initialValues: {
@@ -61,64 +71,8 @@ function Adhesion() {
 
     }) 
 
-//const [file , setFile ] = useState(values.file);
-
-
-    // const postUsers = () => {
-    //     //e.preventDefault();
-    //     const fileName = new Date().getTime() + values.file;
-    //     console.log(fileName)
-    //     const storage = getStorage(app);
-    //     const storageRef = ref(storage, fileName);
-    
-    //     const uploadTask = uploadBytesResumable(storageRef, values.file);
-    
-    // // Register three observers:
-    // // 1. 'state_changed' observer, called any time the state changes
-    // // 2. Error observer, called on failure
-    // // 3. Completion observer, called on successful completion
-    // uploadTask.on('state_changed', 
-    //   (snapshot) => {
-    //     // Observe state change events such as progress, pause, and resume
-    //     // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-    //     const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-    //     console.log('Upload is ' + progress + '% done');
-    //     switch (snapshot.state) {
-    //       case 'paused':
-    //         console.log('Upload is paused');
-    //         break;
-    //       case 'running':
-    //         console.log('Upload is running');
-    //         break;
-    //       default:
-    //     }
-    //   }, 
-    //   (error) => {
-    //     // Handle unsuccessful uploads
-    //     console.log(error);
-    //   }, 
-    //   () => {
-    //     // Handle successful uploads on complete
-    //     // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-    //     getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-    //         console.log(downloadURL)
-    //       const value = {...values, file:downloadURL};
-    //       const post = async() => {
-    //                 try {
-    //                     const res = await axios.post("https://usdtapp.herokuapp.com/api/users/", value)
-    //                     console.log(res);
-    //                 } catch(err) {
-    //                     console.log(err);
-    //                 };
-    //          }
-    //          post()
-    //     });
-    //   }
-    // );}
-      
-
   return (    
-    <form onSubmit={handleSubmit} autoComplete='off'>
+        <form onSubmit={handleSubmit} autoComplete='off'>
         <label style={{color: 'red', fontSize:'20px'}}>ADRESSE DE PAIEMENT</label>
         TRhMMXemFEVcNApzdpYSRGgq1kmz51FAm6<br></br>
         <strong>🖐️USDT (TRC20)</strong>
@@ -184,14 +138,16 @@ function Adhesion() {
         <Link to='/contrat' style={{marginLeft:"5px"}}>contrat d'adhésion</Link>
         </label> 
        {errors.acceptTerms?<p>{errors.acceptTerms}</p>:""}
-        <button 
+       <button 
+            style={{width:'50%', marginLeft:'40px'}}
             type='submit'
             disabled={isSubmitting}
-            //onClick={postUsers}
+            //onClick={onSubmit ? console.log('thx'):''}
         >valider</button>
     </form>
   )
+
 }
 
-export default Adhesion;
 
+export default Adhesion;
