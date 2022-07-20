@@ -49,11 +49,13 @@ const basicSchema = Yup.object().shape({
                     };
                   }
               postUsers(); 
-              if( data.length != 0) {
-                navigate('/success')
-              }  else{
-                console.log('e')
-              } 
+            //   if( data.length != 0) {
+            //     navigate('/success')
+            //   }  else{
+            //     console.log('e')
+            //   } 
+
+            navigate('/success');
     }
     
 
