@@ -9,7 +9,7 @@ export const homeData = [
   },
   {
     id: 2,
-    name: "TRADING",
+    name: "réseau",
     desc: "Le réseau SUN7NETWORK est apolitique et n'est ni une entreprise, une ONG ou un club privé mais un réseau que les entrepreneurs du web ont décidé de mettre en place pour solutionner les problèmes qui empêchent la majorité des networkers de profiter des business où le parrainage,l'équilibrage du réseau sont nécessaires .",
     cover: "https://cdn.tokize.com/fr/wp-content/uploads/2022/03/Article-1-Trader-les-bitcoin-et-les-cryptomonnaies-en-generale.jpeg",
     video: "../video/video2.mp4",

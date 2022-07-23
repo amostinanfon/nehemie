@@ -12,7 +12,7 @@ const Header = () => {
             <div className='logo'>
               {/* <img src='./images/logo.png' alt='' /> */}
               {/* <img src="../../assets/images/Capture2.JPG" alt=""/> */}
-             <p style={{fontWeight:'800', fontSize:'30px'}}><span style={{color: 'red'}}>S💧n</span>7</p>
+             <p style={{fontWeight:'800', fontSize:'30px', margin:'20% 0'}}><span style={{color: 'red'}}>S💧n</span>7</p>
             </div>
             {/*<ul className='flexSB'>*/}
             <ul className={Mobile ? "navMenu-list" : "flexSB"} onClick={() => setMobile(false)}>
