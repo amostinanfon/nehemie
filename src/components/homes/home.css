@@ -25,7 +25,7 @@
   padding: 100px;
 }
 .homeContainer h1 {
-  margin: 20px 0 5px 0;
+  margin: 0px;
   font-size: 90px;
   text-transform: uppercase;
   font-weight: 800;
@@ -47,10 +47,10 @@
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 .homeContainer .rating {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .rating i {
-  color: #e50813;
+  color: #28d6f5;
   margin-right: 5px;
 }
 .rating label {
@@ -113,7 +113,7 @@
 }
 @media only screen and (max-width: 768px) {
   .homeContainer h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
   }
   .home {
