@@ -17,7 +17,7 @@ header a{
 }
 
 header a:hover{
-  background-color: red;
+  background-color: #fa936a;
   border-radius: 5px;
 }
 header i {
@@ -97,7 +97,7 @@ img{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #e50813;
+    background-color: #ffa07a;
     padding-left: 5px;
     width: 50%;
     height: 60vh;
@@ -119,6 +119,6 @@ img{
     margin: auto;
     cursor: pointer;
     background: none;
-    border: #e50813;
+    border: #ffa07a;
   }
 }
