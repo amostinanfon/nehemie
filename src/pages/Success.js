@@ -1,8 +1,6 @@
 import React from 'react';
 
 
-
-
 export default function Success() {
 
    
@@ -52,3 +50,4 @@ export default function Success() {
    )
 
   }
+

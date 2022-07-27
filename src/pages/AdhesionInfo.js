@@ -14,9 +14,9 @@ function AdhesionInfo() {
         <div className='top'>
             <Link to='/' className='two'> AIM- Global</Link>
             <Link to='/' className='one'> Fortune World</Link>
-            <Link to='/' className='two'>Nutrition Market</Link>
-            <Link to='/adhesioninfo' className='one'>Digital community TONTINE</Link>
-        </div>
+            <Link to='/' className='two'>  Nutrition Market</Link>
+	    <Link to='/adhesioninfo' className='one'> Digital community TONTINE</Link>       
+ </div>
     </div>
   )
 }

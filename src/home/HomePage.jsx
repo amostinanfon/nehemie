@@ -8,9 +8,9 @@ import { latest, recommended, upcome } from "../dummyData"
 //import About from '../pages/About'
 
 const HomePage = () => {
-  const [items, setItems] = useState(upcome);
-  const [item, setItem] = useState(latest);
-  const [rec, setRec] = useState(recommended);
+  const [items, setItems] = useState(upcome)
+  const [item, setItem] = useState(latest)
+  const [rec, setRec] = useState(recommended)
   return (
     <>
       <Homes />

@@ -1,14 +1,14 @@
 header {
   height: 15vh;
-  line-height: 15vh;
+  line-height: 10vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   color: #fff;
   position: relative;
   z-index: 999;
 }
-.logo  {
+.logo{
   width: 150px;
-  margin: 0;
+  margin-left: 25px;
 }
 header a{
   color: #fff;
@@ -76,10 +76,6 @@ header button {
     color: white;
   }
 
-img{
-  display: none;
-}
-
   .account{
     margin-right: 30px;
     padding-right: 30px;
@@ -98,21 +94,21 @@ img{
     top: 0;
     left: 0;
     background-color: #ffa07a;
-    padding-left: 5px;
-    width: 50%;
+    padding-left: 1px;
+    width: 38%;
     height: 60vh;
     z-index: 9999;
   }
   header ul li {
     align-items: left;
     margin-top: 10px;
-    padding: 0 50px;
+    padding: 0 30px;
   }
 
   .toggle {
     display: block;
     position: absolute;
-    color: white;
+    color:white;
     top: 0;
     bottom: 0;
     right: 20px;
